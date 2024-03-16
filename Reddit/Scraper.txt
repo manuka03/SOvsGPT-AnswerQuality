@@ -1,0 +1,3 @@
+API used to scrape reddit comments 
+https://console.apify.com/actors/oAuCIx3ItNrs2okjQ/console
+Reddit Scraper Lite was used
