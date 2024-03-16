@@ -1,3 +1,9 @@
 API used to scrape reddit comments 
 https://console.apify.com/actors/oAuCIx3ItNrs2okjQ/console
 Reddit Scraper Lite was used
+
+The links scraped are as given below
+https://www.reddit.com/r/programming/comments/zd71vl/chatgpt_ai_generated_answers_banned_on_stack/
+https://www.reddit.com/r/devops/comments/zdk5a1/stackoverflow_bans_ai_generated_coding_answers_by/
+https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/
+https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/
