@@ -1,0 +1,268 @@
+﻿"body","category","communityName","createdAt","dataType","flair","html","id","isAd","isVideo","numberOfComments","numberOfreplies","over18","parentId","parsedCommunityName","parsedId","scrapedAt","title","upVotes","url","userId","username"
+"Recently, OpenAI opened (released?) their [ChatGPT](https://openai.com/blog/chatgpt/) AI for a Free Research Preview, which has been all the buzz lately. I created an account, and just started asking simple questions, watched some videos of other people using it, and used it to help me write up some simple boilerplate code for a fun side project I had in mind. Then I thought, what would happen if I started giving it questions from Stack Overflow? Some questions I had mind were:
+
+* How accurate would the answers be?
+* How often would the answers I provided be chosen as the accepted answer?
+* How often would the answers I provide not work at all?
+* Would I be able to answer questions for languages / tech I have never previously used?
+
+In this post, I will answer those questions, as well as provide my experience in doing this, pros and cons, things I noticed along the way, and what I plan on doing on going forward
+
+## My Experience
+
+Overall, I would say my experience in doing this has been quite positive. My intent was to help people and answer their question, or rather have ChatGPT answer their question. This has also been a bit of a double-edged sword though, because I would often find myself answering questions I would have little to no idea where to start or how to start troubleshooting the problem if I were doing it on my own. At first, I tried answering as many questions as possible, simply copy + paste the answer and submit. The idea here was to see the success / fail rate of just blindly copying the answer. Not surprisingly, the success rate was rather low. Once I started double checking the answers ChatGPT provided me, however, the rate at which my answers were accepted increased. Only a bit, but still, it was noticeable.
+
+This took place over the last 3 days (Dec 01 - Dec 03). Let’s look at the data:
+
+I answered 46 questions. Of those 46 questions:
+
+* My answer was the selected answer for 10 of them (21.7%)
+* Another answer was selected for 7 of them (15.2%)
+* My answer was incorrect for 4 of them (8.6%)
+* For the remaining 25 questions, no answer has been selected yet (54.3%).
+
+I gained 392 rep, which was an increase of 247%. I started with 159 rep, and I am currently at 551 at time of writing. Also at the time of writing, this has ranked me 69th for rep gained this month. Nice.
+
+&amp;#x200B;
+
+https://preview.redd.it/fm30c0veyy3a1.png?width=741&amp;format=png&amp;auto=webp&amp;s=36af1cdc29444092fd13b86faf7c90bc279939b5
+
+My original plan was to do this for the entire month of December. I then re-assessed and decided to do it for 1 week. But after only 3 days, I decided I simply cannot continue running this experiment. Perhaps I could dial it back, but I was spending a large amount of time doing this. It was fun at first, and still is highly interesting to me, this concept of using AI to answer coding questions from humans, but I noticed I was developing some unhealthy habits, so I have decided to stop completely. Perhaps, if allowed and after some community discussion, I will return and answer only a handful of questions a day, somewhere in the range of 1-3 or so. Or give myself a time limit of an hour or so, and stop after that.
+
+I can confidently say though, I was NOT the only one doing this. If you have used ChatGPT to answer coding questions, you may have noticed it uses the same terminology very often in its responses. I noticed that it after it was done explaining why the code wasn’t working, or explaining steps I should take for what I wanted to accomplish, right before the code snippet, it would say something like:
+
+“Here is an example of how you would do X:”
+
+Also, if the code it would send you would be too long, it would just abruptly stop and the code would be unfinished. This happened somewhat often with React code where the component was quite large, so the JSX would be incomplete. So if you’re browsing Stack Overflow, looking at people's answers, and they show either of these 2 traits, that’s a ChatGPT answer right there.
+
+Furthermore, I also noticed quite a lot of new accounts answering questions using ChatGPT. And I know they were using ChatGPT because of the way ChatGPT words its answers. It looks like a lot of users were looking to also gain a bunch of rep. The issue here is that they would very often not format the answer properly. Code blocks were fine, but any variables, npm libraries, etc., would not be surrounded in backticks for better readability in the plain text parts of the answer. I think what is happening here is that people who (may) have little to no experience with coding are answering questions to solely gain rep.
+
+## Pros and Cons
+
+Next, I want to go over some of the pros and cons that I experienced during these last few days.
+
+One downside that comes to mind having done this, and a point I think people will argue, to which I agree, is that it doesn’t benefit me to just copy and paste answers to questions that ChatGPT gives me without understanding what the code is doing. Now, to be fair, ChatGPT does a pretty damn good job (at least in my opinion) of explaining what the code is doing. It typically provides at least a paragraph or 2 of explanations.
+
+The upside to this though, is that it has opened to me many different areas of web development / programming I wouldn’t have thought to explore. For example, one question was working with the webcam with React. I found that so interesting, so I went and built a simple demo of simply turning my webcam on and off using React + TypeScript. I also ended up answering a question where someone was having an issue with their Discord bot. Now I want to go and build a simple Discord bot. There were a few questions regarding MongoDB, so now I am motivated to go back to learning more about the MERN stack, and try to put together some simple projects there.
+
+So while I may not have fully understood the answer I was providing sometimes, it did motivate me to go out on my own and try some things out I likely wouldn’t have gotten to, and / or reigniting my interest in areas I was previously exploring.
+
+Another downside I found was that I personally found it quite difficult to answer questions where the person provided, for example, the code for a React component or two, and explained the issue(s) they were having. I found this difficult because to me it’s hard to look at only that code in isolation, and not in the larger context of the entire project. Where is that component being used? What are the types of the data / props, etc. I am so used to using TypeScript now that reviewing React code written in JS was a bit difficult. This really made me appreciate those who have not only answered my questions in the past, but also continue answering these types of questions on a regular basis. It is definitely a skill I want to improve upon.
+
+## Going Forward
+
+This is where things get tricky, because I am not sure if what I have been doing is against Stack Overflow’s ToS. I am definitely going to pause on this for a while now, and switch my focus on the areas I’m interested in that I listed above. I’ll just be upfront and share the link to my Stack Overflow account [here](https://stackoverflow.com/users/10688837/andrew-shearer). Feel free to take a look at the answers I provided, and let me know your thoughts. I am really interested in discussing this with the web dev community, so please leave your comments down below! Also, if anyone from Stack Overflow, or highly ranked members have anything to say, or want to get in touch with me directly, you can please do so as well.
+
+Cheers!",,"r/webdev","2022-12-04T23:54:39.000Z","post","Discussion","&lt;!-- SC_OFF --&gt;&lt;div class=""md""&gt;&lt;p&gt;Recently, OpenAI opened (released?) their &lt;a href=""https://openai.com/blog/chatgpt/""&gt;ChatGPT&lt;/a&gt; AI for a Free Research Preview, which has been all the buzz lately. I created an account, and just started asking simple questions, watched some videos of other people using it, and used it to help me write up some simple boilerplate code for a fun side project I had in mind. Then I thought, what would happen if I started giving it questions from Stack Overflow? Some questions I had mind were:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;How accurate would the answers be?&lt;/li&gt;
+&lt;li&gt;How often would the answers I provided be chosen as the accepted answer?&lt;/li&gt;
+&lt;li&gt;How often would the answers I provide not work at all?&lt;/li&gt;
+&lt;li&gt;Would I be able to answer questions for languages / tech I have never previously used?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In this post, I will answer those questions, as well as provide my experience in doing this, pros and cons, things I noticed along the way, and what I plan on doing on going forward&lt;/p&gt;
+
+&lt;h2&gt;My Experience&lt;/h2&gt;
+
+&lt;p&gt;Overall, I would say my experience in doing this has been quite positive. My intent was to help people and answer their question, or rather have ChatGPT answer their question. This has also been a bit of a double-edged sword though, because I would often find myself answering questions I would have little to no idea where to start or how to start troubleshooting the problem if I were doing it on my own. At first, I tried answering as many questions as possible, simply copy + paste the answer and submit. The idea here was to see the success / fail rate of just blindly copying the answer. Not surprisingly, the success rate was rather low. Once I started double checking the answers ChatGPT provided me, however, the rate at which my answers were accepted increased. Only a bit, but still, it was noticeable.&lt;/p&gt;
+
+&lt;p&gt;This took place over the last 3 days (Dec 01 - Dec 03). Let’s look at the data:&lt;/p&gt;
+
+&lt;p&gt;I answered 46 questions. Of those 46 questions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;My answer was the selected answer for 10 of them (21.7%)&lt;/li&gt;
+&lt;li&gt;Another answer was selected for 7 of them (15.2%)&lt;/li&gt;
+&lt;li&gt;My answer was incorrect for 4 of them (8.6%)&lt;/li&gt;
+&lt;li&gt;For the remaining 25 questions, no answer has been selected yet (54.3%).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I gained 392 rep, which was an increase of 247%. I started with 159 rep, and I am currently at 551 at time of writing. Also at the time of writing, this has ranked me 69th for rep gained this month. Nice.&lt;/p&gt;
+
+&lt;p&gt;&amp;#x200B;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=""https://preview.redd.it/fm30c0veyy3a1.png?width=741&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=36af1cdc29444092fd13b86faf7c90bc279939b5""&gt;https://preview.redd.it/fm30c0veyy3a1.png?width=741&amp;amp;format=png&amp;amp;auto=webp&amp;amp;s=36af1cdc29444092fd13b86faf7c90bc279939b5&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;My original plan was to do this for the entire month of December. I then re-assessed and decided to do it for 1 week. But after only 3 days, I decided I simply cannot continue running this experiment. Perhaps I could dial it back, but I was spending a large amount of time doing this. It was fun at first, and still is highly interesting to me, this concept of using AI to answer coding questions from humans, but I noticed I was developing some unhealthy habits, so I have decided to stop completely. Perhaps, if allowed and after some community discussion, I will return and answer only a handful of questions a day, somewhere in the range of 1-3 or so. Or give myself a time limit of an hour or so, and stop after that.&lt;/p&gt;
+
+&lt;p&gt;I can confidently say though, I was NOT the only one doing this. If you have used ChatGPT to answer coding questions, you may have noticed it uses the same terminology very often in its responses. I noticed that it after it was done explaining why the code wasn’t working, or explaining steps I should take for what I wanted to accomplish, right before the code snippet, it would say something like:&lt;/p&gt;
+
+&lt;p&gt;“Here is an example of how you would do X:”&lt;/p&gt;
+
+&lt;p&gt;Also, if the code it would send you would be too long, it would just abruptly stop and the code would be unfinished. This happened somewhat often with React code where the component was quite large, so the JSX would be incomplete. So if you’re browsing Stack Overflow, looking at people&amp;#39;s answers, and they show either of these 2 traits, that’s a ChatGPT answer right there.&lt;/p&gt;
+
+&lt;p&gt;Furthermore, I also noticed quite a lot of new accounts answering questions using ChatGPT. And I know they were using ChatGPT because of the way ChatGPT words its answers. It looks like a lot of users were looking to also gain a bunch of rep. The issue here is that they would very often not format the answer properly. Code blocks were fine, but any variables, npm libraries, etc., would not be surrounded in backticks for better readability in the plain text parts of the answer. I think what is happening here is that people who (may) have little to no experience with coding are answering questions to solely gain rep.&lt;/p&gt;
+
+&lt;h2&gt;Pros and Cons&lt;/h2&gt;
+
+&lt;p&gt;Next, I want to go over some of the pros and cons that I experienced during these last few days.&lt;/p&gt;
+
+&lt;p&gt;One downside that comes to mind having done this, and a point I think people will argue, to which I agree, is that it doesn’t benefit me to just copy and paste answers to questions that ChatGPT gives me without understanding what the code is doing. Now, to be fair, ChatGPT does a pretty damn good job (at least in my opinion) of explaining what the code is doing. It typically provides at least a paragraph or 2 of explanations.&lt;/p&gt;
+
+&lt;p&gt;The upside to this though, is that it has opened to me many different areas of web development / programming I wouldn’t have thought to explore. For example, one question was working with the webcam with React. I found that so interesting, so I went and built a simple demo of simply turning my webcam on and off using React + TypeScript. I also ended up answering a question where someone was having an issue with their Discord bot. Now I want to go and build a simple Discord bot. There were a few questions regarding MongoDB, so now I am motivated to go back to learning more about the MERN stack, and try to put together some simple projects there.&lt;/p&gt;
+
+&lt;p&gt;So while I may not have fully understood the answer I was providing sometimes, it did motivate me to go out on my own and try some things out I likely wouldn’t have gotten to, and / or reigniting my interest in areas I was previously exploring.&lt;/p&gt;
+
+&lt;p&gt;Another downside I found was that I personally found it quite difficult to answer questions where the person provided, for example, the code for a React component or two, and explained the issue(s) they were having. I found this difficult because to me it’s hard to look at only that code in isolation, and not in the larger context of the entire project. Where is that component being used? What are the types of the data / props, etc. I am so used to using TypeScript now that reviewing React code written in JS was a bit difficult. This really made me appreciate those who have not only answered my questions in the past, but also continue answering these types of questions on a regular basis. It is definitely a skill I want to improve upon.&lt;/p&gt;
+
+&lt;h2&gt;Going Forward&lt;/h2&gt;
+
+&lt;p&gt;This is where things get tricky, because I am not sure if what I have been doing is against Stack Overflow’s ToS. I am definitely going to pause on this for a while now, and switch my focus on the areas I’m interested in that I listed above. I’ll just be upfront and share the link to my Stack Overflow account &lt;a href=""https://stackoverflow.com/users/10688837/andrew-shearer""&gt;here&lt;/a&gt;. Feel free to take a look at the answers I provided, and let me know your thoughts. I am really interested in discussing this with the web dev community, so please leave your comments down below! Also, if anyone from Stack Overflow, or highly ranked members have anything to say, or want to get in touch with me directly, you can please do so as well.&lt;/p&gt;
+
+&lt;p&gt;Cheers!&lt;/p&gt;
+&lt;/div&gt;&lt;!-- SC_ON --&gt;","t3_zcq7yx","false","false","40",,"false",,"webdev","zcq7yx","2024-03-15T14:24:53.917Z","I’ve Been Using ChatGPT to Answer Questions on Stack Overflow","113","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/","t2_p2mq2","CanadianWhisk3y"
+"Use of ChatGPT just got banned on SO
+
+https://meta.stackoverflow.com/questions/421831/temporary-policy-chatgpt-is-banned","webdev","r/webdev","2022-12-05T09:24:04.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;Use of ChatGPT just got banned on SO&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=""https://meta.stackoverflow.com/questions/421831/temporary-policy-chatgpt-is-banned""&gt;https://meta.stackoverflow.com/questions/421831/temporary-policy-chatgpt-is-banned&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;","t1_iyzfoha",,,,"4",,"t3_zcq7yx",,"iyzfoha","2024-03-15T14:24:53.959Z",,"77","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iyzfoha/","t2_4mb72","fermilevel"
+"Definitely a good thing - people are apparently starting to spam SO with low quality answers","webdev","r/webdev","2022-12-05T10:02:03.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;Definitely a good thing - people are apparently starting to spam SO with low quality answers&lt;/p&gt;
+&lt;/div&gt;","t1_iyzi4d7",,,,"2",,"t1_iyzfoha",,"iyzi4d7","2024-03-15T14:24:53.959Z",,"41","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iyzi4d7/","t2_bmeisiej","p3zbruh"
+"Why would you even wanna farm SO karma?","webdev","r/webdev","2022-12-05T13:12:38.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;Why would you even wanna farm SO karma?&lt;/p&gt;
+&lt;/div&gt;","t1_iyzx9hc",,,,"2",,"t1_iyzi4d7",,"iyzx9hc","2024-03-15T14:24:53.959Z",,"9","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iyzx9hc/","t2_a8xmm","ClikeX"
+"Resume, job interview flex","webdev","r/webdev","2022-12-05T13:16:39.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;Resume, job interview flex&lt;/p&gt;
+&lt;/div&gt;","t1_iyzxo25",,,,"1",,"t1_iyzx9hc",,"iyzxo25","2024-03-15T14:24:53.959Z",,"10","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iyzxo25/","t2_5gfzq","tidderwork"
+"I’ve never met anyone that cared about Stack Overflow, so people actually use it on their resume?","webdev","r/webdev","2022-12-05T13:18:07.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;I’ve never met anyone that cared about Stack Overflow, so people actually use it on their resume?&lt;/p&gt;
+&lt;/div&gt;","t1_iyzxtev",,,,"2",,"t1_iyzxo25",,"iyzxtev","2024-03-15T14:24:53.959Z",,"8","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iyzxtev/","t2_a8xmm","ClikeX"
+"It’s odd nowadays, but it was a thing some time ago.","webdev","r/webdev","2022-12-05T14:00:13.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;It’s odd nowadays, but it was a thing some time ago.&lt;/p&gt;
+&lt;/div&gt;","t1_iz02egz",,,,"0",,"t1_iyzxtev",,"iz02egz","2024-03-15T14:24:53.959Z",,"6","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iz02egz/","t2_5zpp0zg","Shogobg"
+"The only place that's ever asked me if I had a profile was Stack Overflow themselves.","webdev","r/webdev","2022-12-05T16:56:09.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;The only place that&amp;#39;s ever asked me if I had a profile was Stack Overflow themselves.&lt;/p&gt;
+&lt;/div&gt;","t1_iz0qoe6",,,,"0",,"t1_iyzxtev",,"iz0qoe6","2024-03-15T14:24:53.959Z",,"0","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iz0qoe6/","t2_3fcxq","zephyy"
+"Either insecurity or just to have enough points to deal with the insufferable community without tip-toeing around.","webdev","r/webdev","2022-12-05T13:19:41.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;Either insecurity or just to have enough points to deal with the insufferable community without tip-toeing around.&lt;/p&gt;
+&lt;/div&gt;","t1_iyzxz9o",,,,"0",,"t1_iyzx9hc",,"iyzxz9o","2024-03-15T14:24:53.959Z",,"2","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iyzxz9o/","t2_406wvtub","riskyClick420"
+"Haha yeah I was also using ChatGPT...","webdev","r/webdev","2022-12-05T16:29:22.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;Haha yeah I was also using ChatGPT...&lt;/p&gt;
+&lt;/div&gt;","t1_iz0mnet",,,,"0",,"t1_iyzi4d7",,"iz0mnet","2024-03-15T14:24:53.959Z",,"1","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iz0mnet/","t2_8s5j28z3","TheRealFantasyDuck"
+"so a bunch of people have that idea :)","webdev","r/webdev","2022-12-05T12:58:18.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;so a bunch of people have that idea :)&lt;/p&gt;
+&lt;/div&gt;","t1_iyzvu4v",,,,"0",,"t1_iyzfoha",,"iyzvu4v","2024-03-15T14:24:53.959Z",,"2","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iyzvu4v/",,"[deleted]"
+"Ofcourse they banned it. ChatGPT is a glimpse into the future. A future where AI replaces things like stack overflow. People are starting to realize this and are threatened by it. So they do what they can with the power they have: try to suppress it.
+
+But you can only suppress the inevitable for so long.
+
+This comment may have been ai generated.","webdev","r/webdev","2022-12-05T17:52:43.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;Ofcourse they banned it. ChatGPT is a glimpse into the future. A future where AI replaces things like stack overflow. People are starting to realize this and are threatened by it. So they do what they can with the power they have: try to suppress it.&lt;/p&gt;
+
+&lt;p&gt;But you can only suppress the inevitable for so long.&lt;/p&gt;
+
+&lt;p&gt;This comment may have been ai generated.&lt;/p&gt;
+&lt;/div&gt;","t1_iz0zj3j",,,,"2",,"t1_iyzfoha",,"iz0zj3j","2024-03-15T14:24:53.959Z",,"2","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iz0zj3j/","t2_uc6ybdl","charmilliona1re"
+"From my understanding chatgpt feed off stack overflow. So if the ai only feed itself wouldn't it get dumber and dumber by the day?","webdev","r/webdev","2022-12-05T23:50:29.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;From my understanding chatgpt feed off stack overflow. So if the ai only feed itself wouldn&amp;#39;t it get dumber and dumber by the day?&lt;/p&gt;
+&lt;/div&gt;","t1_iz2ha9t",,,,"1",,"t1_iz0zj3j",,"iz2ha9t","2024-03-15T14:24:53.959Z",,"3","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iz2ha9t/","t2_i5lm9rzh","JamesCommon"
+"Yup lol. The futurist tech evangelists who milk AI’s proverbial dong, fail to admit that the majority of data these models are based off of come from the internet. The AI is just really good at regurgitating it into a human friendly manner","webdev","r/webdev","2022-12-06T00:06:41.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;Yup lol. The futurist tech evangelists who milk AI’s proverbial dong, fail to admit that the majority of data these models are based off of come from the internet. The AI is just really good at regurgitating it into a human friendly manner&lt;/p&gt;
+&lt;/div&gt;","t1_iz2jgq6",,,,"1",,"t1_iz2ha9t",,"iz2jgq6","2024-03-15T14:24:53.959Z",,"0","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iz2jgq6/","t2_4eg9tb8i","AcademicF"
+"Futurist tech evangelists
+
+The Future is now, old man
+
+Good one with the dong tho, I have no rebuttal for that. Even ChatGPT was thrown off with that one","webdev","r/webdev","2022-12-06T00:45:00.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;Futurist tech evangelists&lt;/p&gt;
+
+&lt;p&gt;The Future is now, old man&lt;/p&gt;
+
+&lt;p&gt;Good one with the dong tho, I have no rebuttal for that. Even ChatGPT was thrown off with that one&lt;/p&gt;
+&lt;/div&gt;","t1_iz2okj2",,,,"1",,"t1_iz2jgq6",,"iz2okj2","2024-03-15T14:24:53.959Z",,"0","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iz2okj2/","t2_uc6ybdl","charmilliona1re"
+"Okay Elonite. Don’t overwhelm us too much with your rockets to mars and fake ass tunnels to knowhere.","webdev","r/webdev","2022-12-06T03:19:57.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;Okay Elonite. Don’t overwhelm us too much with your rockets to mars and fake ass tunnels to knowhere.&lt;/p&gt;
+&lt;/div&gt;","t1_iz38nhk",,,,"1",,"t1_iz2okj2",,"iz38nhk","2024-03-15T14:24:53.959Z",,"0","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iz38nhk/","t2_4eg9tb8i","AcademicF"
+"What
+
+Did you respond to the wrong comment? Or just have a weird fetish about daddy Elon?","webdev","r/webdev","2022-12-06T04:43:36.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;What&lt;/p&gt;
+
+&lt;p&gt;Did you respond to the wrong comment? Or just have a weird fetish about daddy Elon?&lt;/p&gt;
+&lt;/div&gt;","t1_iz3ihko",,,,"0",,"t1_iz38nhk",,"iz3ihko","2024-03-15T14:24:53.959Z",,"1","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iz3ihko/","t2_uc6ybdl","charmilliona1re"
+"Yep it’s over for these snobs. ChatGPT will take away many jobs.","webdev","r/webdev","2022-12-17T04:18:51.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;Yep it’s over for these snobs. ChatGPT will take away many jobs.&lt;/p&gt;
+&lt;/div&gt;","t1_j0jsa33",,,,"0",,"t1_iz0zj3j",,"j0jsa33","2024-03-15T14:24:53.959Z",,"2","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/j0jsa33/","t2_30aoinli","Mikedesignstudio"
+"What I'm wondering: https://meta.stackoverflow.com/a/421835/5323344","webdev","r/webdev","2022-12-05T17:23:15.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;What I&amp;#39;m wondering: &lt;a href=""https://meta.stackoverflow.com/a/421835/5323344""&gt;https://meta.stackoverflow.com/a/421835/5323344&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;","t1_iz0utph",,,,"0",,"t1_iyzfoha",,"iz0utph","2024-03-15T14:24:53.959Z",,"1","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iz0utph/","t2_10gtop","Alex_Hovhannisyan"
+"If you are going to answer to a question where you actually have little idea about the topic and hardly know if the answer is actually going to be correct then how is it different from just copy pasting random answer that may seems like correct one found from google? I mean its results will be pretty much the same just with less effort when using AI.
+
+If you are going to use it to aid finding an correct answer or to get to better know the context then it makes sense but trusting an answer from an AI (it has been confirmed that it makes good amount of mistakes) and just copy pasting it's answers will indeed, without any surprise, result in low success rate.
+
+At least I would have found it much more interesting and useful if you would have researched if using an AI would aid finding correct answers faster or not. This one seems more like exploiting than anything else... (at least in my eyes)
+
+But like you said at least you learned something from it so it is not all that bad...","webdev","r/webdev","2022-12-05T00:21:01.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;If you are going to answer to a question where you actually have little idea about the topic and hardly know if the answer is actually going to be correct then how is it different from just copy pasting random answer that may seems like correct one found from google? I mean its results will be pretty much the same just with less effort when using AI.&lt;/p&gt;
+
+&lt;p&gt;If you are going to use it to aid finding an correct answer or to get to better know the context then it makes sense but trusting an answer from an AI (it has been confirmed that it makes good amount of mistakes) and just copy pasting it&amp;#39;s answers will indeed, without any surprise, result in low success rate.&lt;/p&gt;
+
+&lt;p&gt;At least I would have found it much more interesting and useful if you would have researched if using an AI would aid finding correct answers faster or not. This one seems more like exploiting than anything else... (at least in my eyes)&lt;/p&gt;
+
+&lt;p&gt;But like you said at least you learned something from it so it is not all that bad...&lt;/p&gt;
+&lt;/div&gt;","t1_iyxx1hd",,,,"3",,"t3_zcq7yx",,"iyxx1hd","2024-03-15T14:24:53.959Z",,"49","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iyxx1hd/","t2_2hwdspy","lint_it"
+"I think it's a testement that maybe it should be used as a last resort when stack overflow hasn't even been answered yet, seem like there so much potential in this tech tho","webdev","r/webdev","2022-12-05T01:42:15.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;I think it&amp;#39;s a testement that maybe it should be used as a last resort when stack overflow hasn&amp;#39;t even been answered yet, seem like there so much potential in this tech tho&lt;/p&gt;
+&lt;/div&gt;","t1_iyy7m0q",,,,"1",,"t1_iyxx1hd",,"iyy7m0q","2024-03-15T14:24:53.959Z",,"6","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iyy7m0q/","t2_m6aqnvn","iVictoryVictor"
+"I think it would be better for questions to go unanswered than to give potentially wrong / misleading answers.
+
+ChatGPT gives absolutely no guarantees that what any of it says is correct. In my opinion it's really little better than the markov chain bots of old - it's still just stringing together words without any real understanding of their meaning or context, and thus their correctness.","webdev","r/webdev","2022-12-05T09:07:20.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;I think it would be better for questions to go unanswered than to give potentially wrong / misleading answers.&lt;/p&gt;
+
+&lt;p&gt;ChatGPT gives absolutely no guarantees that what any of it says is correct. In my opinion it&amp;#39;s really little better than the markov chain bots of old - it&amp;#39;s still just stringing together words without any real understanding of their meaning or context, and thus their correctness.&lt;/p&gt;
+&lt;/div&gt;","t1_iyzem6x",,,,"0",,"t1_iyy7m0q",,"iyzem6x","2024-03-15T14:24:53.959Z",,"6","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iyzem6x/","t2_de8xv0yh","allen_jb"
+"This. I can already see how this will complicate SO in the future. ""Hey bud, they changed the requirements for x issue that you originally stated, did you do the refactor and if so how?"" and since the person using GPT didn't actually understand the issue, they have no valid input for  the new requests that come to that thread / SO post. Thus making more SO posts about the same issue.   
+
+
+Sometimes providing an answer on SO doesn't help anyone till years later when the issue is more common. I've been on week long *rabbit hole* searches for answers to questions that are very relevant today, but the last post would read something like ""i fixed it, never-mind"". This is the equivalent.","webdev","r/webdev","2022-12-05T14:09:27.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;This. I can already see how this will complicate SO in the future. &amp;quot;Hey bud, they changed the requirements for x issue that you originally stated, did you do the refactor and if so how?&amp;quot; and since the person using GPT didn&amp;#39;t actually understand the issue, they have no valid input for  the new requests that come to that thread / SO post. Thus making more SO posts about the same issue.   &lt;/p&gt;
+
+&lt;p&gt;Sometimes providing an answer on SO doesn&amp;#39;t help anyone till years later when the issue is more common. I&amp;#39;ve been on week long &lt;em&gt;rabbit hole&lt;/em&gt; searches for answers to questions that are very relevant today, but the last post would read something like &amp;quot;i fixed it, never-mind&amp;quot;. This is the equivalent.&lt;/p&gt;
+&lt;/div&gt;","t1_iz03hpi",,,,"0",,"t1_iyxx1hd",,"iz03hpi","2024-03-15T14:24:53.959Z",,"2","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iz03hpi/","t2_16ffvqio","AMLyf"
+"LOL yo is your avatar supposed to be Eris Morn?","webdev","r/webdev","2022-12-05T15:44:39.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;LOL yo is your avatar supposed to be Eris Morn?&lt;/p&gt;
+&lt;/div&gt;","t1_iz0g21e",,,,"1",,"t1_iyxx1hd",,"iz0g21e","2024-03-15T14:24:53.959Z",,"1","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iz0g21e/","t2_13h2vo","d0rf47"
+"I had to google who that is because I have never played Destiny... But it seems you are right.","webdev","r/webdev","2022-12-05T19:15:22.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;I had to google who that is because I have never played Destiny... But it seems you are right.&lt;/p&gt;
+&lt;/div&gt;","t1_iz1ccum",,,,"1",,"t1_iz0g21e",,"iz1ccum","2024-03-15T14:24:53.959Z",,"2","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iz1ccum/","t2_2hwdspy","lint_it"
+"lulz thats funny i thought maybe you played it too!","webdev","r/webdev","2022-12-05T19:29:09.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;lulz thats funny i thought maybe you played it too!&lt;/p&gt;
+&lt;/div&gt;","t1_iz1ehi6",,,,"0",,"t1_iz1ccum",,"iz1ehi6","2024-03-15T14:24:53.959Z",,"1","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iz1ehi6/","t2_13h2vo","d0rf47"
+"[deleted]","webdev","r/webdev","2022-12-05T02:13:36.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;[deleted]&lt;/p&gt;
+&lt;/div&gt;","t1_iyybmuk",,,,"1",,"t3_zcq7yx",,"iyybmuk","2024-03-15T14:24:53.959Z",,"9","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iyybmuk/",,"[deleted]"
+"I wouldn't say ""enhanced""","webdev","r/webdev","2022-12-05T07:18:55.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;I wouldn&amp;#39;t say &amp;quot;enhanced&amp;quot;&lt;/p&gt;
+&lt;/div&gt;","t1_iyz75xl",,,,"0",,"t1_iyybmuk",,"iyz75xl","2024-03-15T14:24:53.959Z",,"2","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iyz75xl/","t2_d5thz","ijmacd"
+"account suspended lol","webdev","r/webdev","2022-12-05T18:39:33.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;account suspended lol&lt;/p&gt;
+&lt;/div&gt;","t1_iz16tnn",,,,"0",,"t3_zcq7yx",,"iz16tnn","2024-03-15T14:24:53.959Z",,"4","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iz16tnn/","t2_4ccqs","julian88888888"
+"I’ve found using chatGPT to debug snippets of code to be an excellent tool. It also is very good at explaining what code is doing. Just a few minutes I had it fix some buggy code that relied on string slices and it proposed a much better solution. Version 3+ of this is going to put a lot of people out of jobs","webdev","r/webdev","2022-12-05T03:22:53.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;I’ve found using chatGPT to debug snippets of code to be an excellent tool. It also is very good at explaining what code is doing. Just a few minutes I had it fix some buggy code that relied on string slices and it proposed a much better solution. Version 3+ of this is going to put a lot of people out of jobs&lt;/p&gt;
+&lt;/div&gt;","t1_iyyk4o1",,,,"1",,"t3_zcq7yx",,"iyyk4o1","2024-03-15T14:24:53.959Z",,"6","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iyyk4o1/",,"[deleted]"
+"I really need to look at chatGPT since i may be taking a new job and don’t know one part of the stack
+
+How do use it to debug existing code? I thought it was like copilot in that you write a description of what you want and it gives you an answer, not that you would input existing code
+
+Tried copilot for a bit but it wasn’t accurate enough for me IME","webdev","r/webdev","2022-12-05T13:06:04.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;I really need to look at chatGPT since i may be taking a new job and don’t know one part of the stack&lt;/p&gt;
+
+&lt;p&gt;How do use it to debug existing code? I thought it was like copilot in that you write a description of what you want and it gives you an answer, not that you would input existing code&lt;/p&gt;
+
+&lt;p&gt;Tried copilot for a bit but it wasn’t accurate enough for me IME&lt;/p&gt;
+&lt;/div&gt;","t1_iyzwlrx",,,,"2",,"t1_iyyk4o1",,"iyzwlrx","2024-03-15T14:24:53.959Z",,"2","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iyzwlrx/","t2_2tzpveqz","Trakeen"
+"Will probably work if you ask it a question, then paste the code in after in the same prompt.","webdev","r/webdev","2022-12-06T01:51:45.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;Will probably work if you ask it a question, then paste the code in after in the same prompt.&lt;/p&gt;
+&lt;/div&gt;","t1_iz2x9o1",,,,"1",,"t1_iyzwlrx",,"iz2x9o1","2024-03-15T14:24:53.959Z",,"1","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iz2x9o1/","t2_tk4ypzu3","explosive__tech"
+"I’ll try that. I used it some today and the code it spit out looked very good but wasn’t actually functional","webdev","r/webdev","2022-12-06T03:00:54.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;I’ll try that. I used it some today and the code it spit out looked very good but wasn’t actually functional&lt;/p&gt;
+&lt;/div&gt;","t1_iz36bcf",,,,"0",,"t1_iz2x9o1",,"iz36bcf","2024-03-15T14:24:53.959Z",,"1","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iz36bcf/","t2_2tzpveqz","Trakeen"
+"First of all, you have to go in not trusting it completely. Also, there is a text limit so it’s better to just give it function snippets so it has some context but isn’t a massive block of code otherwise it will maybe only print out have the answer. I’ll ask what the function does. Then I’ll ask it what problems it has. Or if get an error
+Message I’ll give it the line of code and the error message. This thing is known to be confidently incorrect but if you call it on it’s mistakes it will usually fix them. It takes some getting used to, but treat it like a coworker/mentor when you get stuck. It can walk you through the code and explain it. If you are getting a weird result you can ask about it.","webdev","r/webdev","2022-12-06T10:03:42.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;First of all, you have to go in not trusting it completely. Also, there is a text limit so it’s better to just give it function snippets so it has some context but isn’t a massive block of code otherwise it will maybe only print out have the answer. I’ll ask what the function does. Then I’ll ask it what problems it has. Or if get an error
+Message I’ll give it the line of code and the error message. This thing is known to be confidently incorrect but if you call it on it’s mistakes it will usually fix them. It takes some getting used to, but treat it like a coworker/mentor when you get stuck. It can walk you through the code and explain it. If you are getting a weird result you can ask about it.&lt;/p&gt;
+&lt;/div&gt;","t1_iz46zpz",,,,"0",,"t1_iyzwlrx",,"iz46zpz","2024-03-15T14:24:53.959Z",,"1","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iz46zpz/",,"[deleted]"
+"When something becomes a trend, people tend to do  a lot of useless stuff.
+
+You have the example of KickStarter that had a lot of useless IoT projects because IoT was trending back then. 
+
+Now you have AI, people are adding the word ""AI"" to products just to sell more, even though the product itself probably doesn't need artificial intelligence, and they struggle to implement some AI to the product instead of building something that solves people's problems.
+
+Now with chatGPT people tend to create articles about useless things that they've done such as using the algorythm to answer StackOverflow questions","webdev","r/webdev","2022-12-05T09:08:23.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;When something becomes a trend, people tend to do  a lot of useless stuff.&lt;/p&gt;
+
+&lt;p&gt;You have the example of KickStarter that had a lot of useless IoT projects because IoT was trending back then. &lt;/p&gt;
+
+&lt;p&gt;Now you have AI, people are adding the word &amp;quot;AI&amp;quot; to products just to sell more, even though the product itself probably doesn&amp;#39;t need artificial intelligence, and they struggle to implement some AI to the product instead of building something that solves people&amp;#39;s problems.&lt;/p&gt;
+
+&lt;p&gt;Now with chatGPT people tend to create articles about useless things that they&amp;#39;ve done such as using the algorythm to answer StackOverflow questions&lt;/p&gt;
+&lt;/div&gt;","t1_iyzeopw",,,,"0",,"t3_zcq7yx",,"iyzeopw","2024-03-15T14:24:53.959Z",,"6","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iyzeopw/","t2_dhqe97e6","ze_do_pneu_"
+"Hey quick tip I learned from the WAN show- apparently when it randomly just cuts off with large things (like a react component) you can type “continue” to have it continue the prompt. I don’t know if that’s actually the case, but that was what was said.","webdev","r/webdev","2022-12-05T15:34:30.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;Hey quick tip I learned from the WAN show- apparently when it randomly just cuts off with large things (like a react component) you can type “continue” to have it continue the prompt. I don’t know if that’s actually the case, but that was what was said.&lt;/p&gt;
+&lt;/div&gt;","t1_iz0elqb",,,,"0",,"t3_zcq7yx",,"iz0elqb","2024-03-15T14:24:53.959Z",,"3","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iz0elqb/","t2_2isdtvp1","Sigmadelta8"
+"I have been building an iOS app as a pet project lately and I was asking it for help when I ran into problems and I haven't found it very useful. I think its cuz a lot of apples libraries are only documented via autogenerated class / method definition style docs and it doesn't seem to be able to interpret those well.
+
+It doesn't have the ability to take a guess at how much it doesn't know like humans do either so sometimes it will just very confidently make a bunch of shit up.","webdev","r/webdev","2022-12-05T13:40:41.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;I have been building an iOS app as a pet project lately and I was asking it for help when I ran into problems and I haven&amp;#39;t found it very useful. I think its cuz a lot of apples libraries are only documented via autogenerated class / method definition style docs and it doesn&amp;#39;t seem to be able to interpret those well.&lt;/p&gt;
+
+&lt;p&gt;It doesn&amp;#39;t have the ability to take a guess at how much it doesn&amp;#39;t know like humans do either so sometimes it will just very confidently make a bunch of shit up.&lt;/p&gt;
+&lt;/div&gt;","t1_iz006u9",,,,"0",,"t3_zcq7yx",,"iz006u9","2024-03-15T14:24:53.959Z",,"2","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iz006u9/",,"[deleted]"
+"Nice","webdev","r/webdev","2022-12-05T17:34:54.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;Nice&lt;/p&gt;
+&lt;/div&gt;","t1_iz0wmlb",,,,"0",,"t3_zcq7yx",,"iz0wmlb","2024-03-15T14:24:53.959Z",,"0","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iz0wmlb/","t2_a35uy","waiting4op2deliver"
+"Incredibily underrated post","webdev","r/webdev","2022-12-05T01:40:26.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;Incredibily underrated post&lt;/p&gt;
+&lt;/div&gt;","t1_iyy7dq1",,,,"0",,"t3_zcq7yx",,"iyy7dq1","2024-03-15T14:24:53.959Z",,"-8","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iyy7dq1/","t2_m6aqnvn","iVictoryVictor"
+"This is crazy! Very cool.","webdev","r/webdev","2022-12-05T01:35:08.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;This is crazy! Very cool.&lt;/p&gt;
+&lt;/div&gt;","t1_iyy6p6w",,,,"0",,"t3_zcq7yx",,"iyy6p6w","2024-03-15T14:24:53.959Z",,"-2","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iyy6p6w/","t2_omtyea5l","podojavascript"
+"Answer a question about recursion on Stack Overflow using ChatGPT.","webdev","r/webdev","2022-12-05T16:16:07.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;Answer a question about recursion on Stack Overflow using ChatGPT.&lt;/p&gt;
+&lt;/div&gt;","t1_iz0ko8m",,,,"0",,"t3_zcq7yx",,"iz0ko8m","2024-03-15T14:24:53.959Z",,"1","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/iz0ko8m/","t2_93jse","fireball_jones"
+"What's funny about SO is that the moderators have such tiny reproductive organs (Compensated by massive egos) that even the best, professional answers, will be flagged as an AI answer. No one knows if it is AI or not. The moderators are just using ChatGPT as an excuse to be toxic. Business as usual. Mean time, we can ask ChatGPT questions and actually work through a problem without being judged for simply asking a question. RIP, StackOverflow.","webdev","r/webdev","2023-02-27T03:23:49.000Z","comment",,"&lt;div class=""md""&gt;&lt;p&gt;What&amp;#39;s funny about SO is that the moderators have such tiny reproductive organs (Compensated by massive egos) that even the best, professional answers, will be flagged as an AI answer. No one knows if it is AI or not. The moderators are just using ChatGPT as an excuse to be toxic. Business as usual. Mean time, we can ask ChatGPT questions and actually work through a problem without being judged for simply asking a question. RIP, StackOverflow.&lt;/p&gt;
+&lt;/div&gt;","t1_ja677dy",,,,"0",,"t3_zcq7yx",,"ja677dy","2024-03-15T14:24:53.959Z",,"1","https://www.reddit.com/r/webdev/comments/zcq7yx/ive_been_using_chatgpt_to_answer_questions_on/ja677dy/","t2_76qltchq","Ok-Discussion2980"
