@@ -1,0 +1,54 @@
+SELECT TOP 1000 
+    x.Id AS QuestionId,
+    y.Id AS AnswerId,
+    x.AcceptedAnswerId,
+    x.ViewCount,
+    x.Title,
+    x.AnswerCount,
+    x.Tags,
+    x.Score,
+    x.Body,
+    x.OwnerUserId, 
+    Reputation,
+    x.CreationDate AS QuestionDate,
+    y.CreationDate AS AnswerDate,
+    x.FavoriteCount,
+    DATEDIFF(DAY, x.CreationDate, y.CreationDate) AS FirstAnswerInterval,
+    DATEDIFF(DAY, x.CreationDate, z.CreationDate) AS AcceptedAnswerInterval -- New column for accepted answer interval
+FROM (
+    SELECT
+        Posts.Id, 
+        ViewCount,
+        Title,
+        AnswerCount,
+        AcceptedAnswerId,
+        FavoriteCount,
+        Tags,
+        Score,
+        Body,
+        OwnerUserId, 
+        Reputation,
+        Posts.CreationDate 
+    FROM 
+        Posts, Users 
+    WHERE 
+        PostTypeId = 1
+        AND OwnerUserId = Users.Id
+        AND AcceptedAnswerId IS NOT NULL
+        AND AnswerCount > 0
+        AND Score > 10
+        AND YEAR(Posts.CreationDate) = 2018
+        AND Tags LIKE '%<python>%'
+) x 
+LEFT JOIN (
+    SELECT *, 
+           ROW_NUMBER() OVER(PARTITION BY ParentId ORDER BY CreationDate) AS RowNo
+    FROM Posts
+    WHERE PostTypeId = 2
+) y
+ON x.Id = y.ParentId AND y.RowNo = 1
+LEFT JOIN Posts z -- Joining for accepted answer interval calculation
+ON x.AcceptedAnswerId = z.Id
+WHERE 
+    y.Id IS NOT NULL
+ORDER BY AnswerCount DESC;
